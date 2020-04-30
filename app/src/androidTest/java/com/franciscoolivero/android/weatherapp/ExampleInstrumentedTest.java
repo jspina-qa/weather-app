@@ -24,4 +24,9 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.franciscoolivero.android.weatherapp", appContext.getPackageName());
     }
+
+    @Test
+    public void helloWorld(){
+
+    }
 }
