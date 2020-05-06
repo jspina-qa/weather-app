@@ -37,7 +37,7 @@ public class EspressoHelperMethods {
         boolean isItemHidden = true;
         int count = 0;
 
-        while (isItemHidden && count++ < 14) {
+        while (isItemHidden && count++ < 20) {
             try {
                 view.check(matches(isDisplayed()));
                 isItemHidden = false;

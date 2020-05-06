@@ -4,6 +4,7 @@ import androidx.test.rule.ActivityTestRule;
 
 import com.franciscoolivero.android.weatherapp.pages.todaypage.CurrentWeatherFragmentPage;
 import com.franciscoolivero.android.weatherapp.utils.BaseEspressoTest;
+import com.franciscoolivero.android.weatherapp.view.CurrentWeatherFragment;
 import com.franciscoolivero.android.weatherapp.view.WeatherActivity;
 
 import org.junit.After;
@@ -40,7 +41,8 @@ public class CurrentWeatherFragmentTests extends BaseEspressoTest {
      * AND assert the current temperature is displayed
      * Test Case: 0123456
      *************************************************************************************************/
-    @Test
+    //@Test
+    // As per this test is to get the idea I'll comment it out so the actual tests are separated from the run
     public void testSomeSuccessHappens() {
         CurrentWeatherFragmentPage.assertHourlyForecastHeaderIsDisplayed();
         CurrentWeatherFragmentPage.assertTemperatureIsDisplayed();
@@ -54,9 +56,102 @@ public class CurrentWeatherFragmentTests extends BaseEspressoTest {
      * AND assert the current temperature is not displayed
      * Test Case: 0123456
      *************************************************************************************************/
-    @Test
+    //@Test
+    // As per this test is to get the idea I'll comment it out so the actual tests are separated from the run
     public void testSomeErrorHappens() {
         CurrentWeatherFragmentPage.assertHourlyForecastHeaderIsDisplayed();
         CurrentWeatherFragmentPage.assertTemperatureIsNotDisplayed();
     }
+
+    /*************************************************************************************************
+     * Test
+     * GIVEN the app has loaded
+     * AND visible to the user
+     * WHEN the user checks the Today tab
+     * THEN today's date is displayed at the top of the tab's frame.
+     * Test Case: ####
+     *************************************************************************************************/
+
+    @Test
+    public void testTodayDateIsDisplayed(){
+        CurrentWeatherFragmentPage.assertTodayDateIsDisplayed();
+    }
+
+    /*************************************************************************************************
+     * Test
+     * GIVEN the app has loaded
+     * AND visible to the user
+     * WHEN the user checks the Today tab
+     * THEN today's date is displayed at the top of the tab's frame.
+     * Test Case: ####
+     *************************************************************************************************/
+
+    @Test
+    public void testLocationIsDisplayed(){
+        CurrentWeatherFragmentPage.assertLocationIsDisplayed();
+    }
+
+    @Test
+    public void testWeatherIconIsDisplayed(){
+        CurrentWeatherFragmentPage.assertWeatherIconIsDisplayed();
+    }
+
+    @Test
+    public void testWeatherDescriptionIsDisplayed(){
+        CurrentWeatherFragmentPage.assertCurrentWeatherDescriptionIsDisplayed();
+    }
+
+    @Test
+    public void testCurrentWeatherIsDisplayed(){
+        CurrentWeatherFragmentPage.assertTemperatureIsDisplayed();
+    }
+
+    @Test
+    public void testRealFeelLabelIsDisplayed(){
+        CurrentWeatherFragmentPage.assertRealFeelLabelIsDisplayed();
+    }
+
+    @Test
+    public void testCurrentRealFeelIsDisplayed(){
+        CurrentWeatherFragmentPage.assertCurrentRealFeelIsDisplayed();
+    }
+
+    @Test
+    public void testPressureLabelIsDisplayed(){
+        CurrentWeatherFragmentPage.assertPressureLabelIsDisplayed();
+    }
+
+    @Test
+    public void testCurrentPressureIsDisplayed(){
+        CurrentWeatherFragmentPage.assertCurrentPressureIsDisplayed();
+    }
+
+    @Test
+    public void testHumidityLabelIsDisplayed(){
+        CurrentWeatherFragmentPage.assertHumidityLabelIsDisplayed();
+    }
+
+    @Test
+    public void testCurrentHumidityIsDisplayed(){
+        CurrentWeatherFragmentPage.assertCurrentHumidityIsDisplayed();
+    }
+
+    @Test
+    public void testWindLabelIsDisplayed(){
+        CurrentWeatherFragmentPage.assertWindLabelIsDisplayed();
+    }
+
+    @Test
+    public void testCurrentWindIsDisplayed(){
+        CurrentWeatherFragmentPage.assertCurrentWindIsDisplayed();
+    }
+
+
+    /*************************************************************************************************
+     * Test
+     * GIVEN
+     * WHEN
+     * THEN
+     * Test Case: ####
+     *************************************************************************************************/
 }
