@@ -73,76 +73,19 @@ public class CurrentWeatherFragmentTests extends BaseEspressoTest {
      *************************************************************************************************/
 
     @Test
-    public void testTodayDateIsDisplayed(){
+    public void testAllIsDisplayed(){
         CurrentWeatherFragmentPage.assertTodayDateIsDisplayed();
-    }
-
-    /*************************************************************************************************
-     * Test
-     * GIVEN the app has loaded
-     * AND visible to the user
-     * WHEN the user checks the Today tab
-     * THEN today's date is displayed at the top of the tab's frame.
-     * Test Case: ####
-     *************************************************************************************************/
-
-    @Test
-    public void testLocationIsDisplayed(){
         CurrentWeatherFragmentPage.assertLocationIsDisplayed();
-    }
-
-    @Test
-    public void testWeatherIconIsDisplayed(){
         CurrentWeatherFragmentPage.assertWeatherIconIsDisplayed();
-    }
-
-    @Test
-    public void testWeatherDescriptionIsDisplayed(){
         CurrentWeatherFragmentPage.assertCurrentWeatherDescriptionIsDisplayed();
-    }
-
-    @Test
-    public void testCurrentWeatherIsDisplayed(){
         CurrentWeatherFragmentPage.assertTemperatureIsDisplayed();
-    }
-
-    @Test
-    public void testRealFeelLabelIsDisplayed(){
-        CurrentWeatherFragmentPage.assertRealFeelLabelIsDisplayed();
-    }
-
-    @Test
-    public void testCurrentRealFeelIsDisplayed(){
+        //CurrentWeatherFragmentPage.assertRealFeelLabelIsDisplayed();
         CurrentWeatherFragmentPage.assertCurrentRealFeelIsDisplayed();
-    }
-
-    @Test
-    public void testPressureLabelIsDisplayed(){
         CurrentWeatherFragmentPage.assertPressureLabelIsDisplayed();
-    }
-
-    @Test
-    public void testCurrentPressureIsDisplayed(){
         CurrentWeatherFragmentPage.assertCurrentPressureIsDisplayed();
-    }
-
-    @Test
-    public void testHumidityLabelIsDisplayed(){
         CurrentWeatherFragmentPage.assertHumidityLabelIsDisplayed();
-    }
-
-    @Test
-    public void testCurrentHumidityIsDisplayed(){
         CurrentWeatherFragmentPage.assertCurrentHumidityIsDisplayed();
-    }
-
-    @Test
-    public void testWindLabelIsDisplayed(){
         CurrentWeatherFragmentPage.assertWindLabelIsDisplayed();
-    }
-
-    @Test
-    public void testCurrentWindIsDisplayed(){
         CurrentWeatherFragmentPage.assertCurrentWindIsDisplayed();
     }
 

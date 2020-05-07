@@ -3,6 +3,8 @@ package com.franciscoolivero.android.weatherapp.utils;
 public class TestData {
     //Global
     public static final String HOURLY_FORECAST_COPY = "Hourly Forecast";
+    public static final String TODAY_TAB_COPY = "TODAY";
+    public static final String DAILY_TAB_COPY = "DAILY";
 
     //Resource names
     public static final String LIST_ITEM_SELECTED_CHECKMARK = "list_item_checkmark";
